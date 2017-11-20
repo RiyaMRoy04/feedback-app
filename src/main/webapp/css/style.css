@@ -1,0 +1,92 @@
+
+html,body {height:100%;}
+.back{
+	position:relative;
+	background: -webkit-linear-gradient(to right top, rgba(29, 54, 73, 0.69), rgba(45, 63, 74, 0.88)) repeat scroll 0% 0%;/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(to right top, rgba(29, 54, 73, 0.69), rgba(45, 63, 74, 0.88)) repeat scroll 0% 0%; /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(to right top, rgba(29, 54, 73, 0.69), rgba(45, 63, 74, 0.88)) repeat scroll 0% 0%; /* For Firefox 3.6 to 15 */
+	background: transparent linear-gradient(to right top, rgba(29, 54, 73, 0.69), rgba(45, 63, 74, 0.88)) repeat scroll 0% 0%;
+	height:100%;
+}
+.border{
+	margin-top:40px;
+	position:relative;
+	background:#fff;
+	color:#333;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;	  
+	border:solid 4px #fff;
+	border-left-color:#5CE6E6;
+}
+.login-box{
+	margin-top:30px;
+	position:relative;
+	background:#fff;
+	color:#333;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+	border:solid 4px #fff;
+	border-top-color:#5CE6E6;
+}
+
+.border-wl{
+	margin-top:40px;
+	position:relative;
+	background:#fff;
+	color:#333;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;	  
+	border:solid 2px #fff;
+	border-top-color:#5CE6E6;
+	margin-bottom:20px;
+	border-left-color: #eee;
+	border-right-color: #eee;
+}
+hr { 
+	height: 12px; border: 0; box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); }
+	
+	a{
+  color           : #9c3;
+  text-decoration : none;
+}
+	.starRating:not(old){
+  display        : inline-block;
+  width          : 7.5em;
+  height         : 1.5em;
+  overflow       : hidden;
+  vertical-align : bottom;
+}
+
+.starRating:not(old) > input{
+  margin-right : -100%;
+  opacity      : 0;
+}
+
+.starRating:not(old) > label{
+  display         : block;
+  float           : right;
+  position        : relative;
+  background      : url('../images/star-off.svg');
+  background-size : contain;
+}
+
+.starRating:not(old) > label:before{
+  content         : '';
+  display         : block;
+  width           : 1.5em;
+  height          : 1.5em;
+  background      : url('../images/star-on.svg');
+  background-size : contain;
+  opacity         : 0;
+  transition      : opacity 0.2s linear;
+}
+
+.starRating:not(old) > label:hover:before,
+.starRating:not(old) > label:hover ~ label:before,
+.starRating:not(:hover) > :checked ~ label:before{
+  opacity : 1;
+}
+	
